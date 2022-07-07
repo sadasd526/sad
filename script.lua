@@ -5,7 +5,7 @@ if game.Players.LocalPlayer.Name == "Bartek213710" then
 	while wait() do
 
 
-		u7.get("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(game:GetService("Players").Bartek213710, true)
+		u7.get("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(game:GetService("Players").crecerR_WasTaken, true)
 		wait(1)
 	end
 else
@@ -16,7 +16,7 @@ else
 
 	while wait() do
 		local data = require(game.ReplicatedStorage.ClientModules.Core.ClientData).get_data()
-		u7.get("TradeAPI/SendTradeRequest"):FireServer(game:GetService("Players").JustAJustJust)
+		u7.get("TradeAPI/SendTradeRequest"):FireServer(game:GetService("Players").Bartek213710)
 
 		while wait() do
 			data = require(game.ReplicatedStorage.ClientModules.Core.ClientData).get_data()
