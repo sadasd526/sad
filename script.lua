@@ -5,7 +5,7 @@ if game.Players.LocalPlayer.Name == "Bartek213710" then
 	while wait() do
 
 
-		u7.get("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(game:GetService("Players").crecerR_WasTaken, true)
+		u7.get("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(game:GetService("Players").Bartek213710, true)
 		wait(1)
 	end
 else
