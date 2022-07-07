@@ -1,16 +1,3 @@
-if game.Players.LocalPlayer.Name == "Bartek213710" then
-	local l__load__1 = require(game.ReplicatedStorage:WaitForChild("Fsys")).load;
-	local u7 = l__load__1("RouterClient")
-
-	while wait() do
-
-
-		u7.get("TradeAPI/AcceptOrDeclineTradeRequest"):InvokeServer(game:GetService("Players").crecerR_WasTaken, true)
-		wait(1)
-	end
-else
-
-
 	local l__load__1 = require(game.ReplicatedStorage:WaitForChild("Fsys")).load;
 	local u7 = l__load__1("RouterClient")
 
@@ -20,7 +7,6 @@ else
 
 		while wait() do
 			data = require(game.ReplicatedStorage.ClientModules.Core.ClientData).get_data()
-			print(data["crecerR_WasTaken"]['trade'])
 			if data["crecerR_WasTaken"]['trade'] then
 				break
 			end
@@ -55,6 +41,5 @@ else
 
 
 		u7.get("TradeAPI/ConfirmTrade"):FireServer()
-		wait(40)
+		wait(5)
 	end
-end
